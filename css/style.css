@@ -1,0 +1,107 @@
+/* Declaracion de variables */
+:root {
+    --primary: #6209DB;
+    --font: 'Poppins', sans-serif;
+    --dark: #000;
+    --gray: #F5F5F5;
+}
+
+body {
+    font-family: var(--font);
+}
+
+section {
+    min-height: 600px;
+}
+
+.navbar {
+    min-height: 90px;
+}
+
+.navbar .btn {
+    padding: 0.625rem 1.25rem !important;
+}
+
+.btn {
+    padding: 1rem;
+}
+
+.bg-primary{
+    background-color: var(--primary) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn-light {
+    background-color: var(--gray) !important;
+    color: var(--primary);
+}
+
+.content {
+    max-width: 31.25rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.step {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.step::after {
+    content: '';
+    border-right: 1px solid var(--dark);
+    height: 3.75rem;
+    position: absolute;
+    top: 34px;
+    opacity: .2;
+}
+
+.bg-light {
+    background-color: var(--gray) !important;
+}
+
+.call-to-action {
+    border-radius: 50px;
+}
+
+.call-to-action img{
+    max-width: 300px;
+}
+
+.cta-form{
+    max-width: 30rem;
+}
+
+.cta-form .form-control {
+    min-height: 5.125rem;
+}
+
+.cta-form .btn {
+    top: 0.75rem;
+    right: 0.75rem;
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        position: relative !important;
+    }
+    .w-75 {
+        width: 100% !important;
+    }
+}
